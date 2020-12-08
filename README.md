@@ -19,7 +19,7 @@ npm install
 ng serve
 ```
 
-Please remember to update the accessToken inside the **webex-widget.component.ts**.<br />
+Please remember to update the accessToken inside the **webex-widget.component.ts**.<br>
 AccessToken can be generated as per  https://developer.webex.com/docs/widgets instructions.
 
 
@@ -27,8 +27,8 @@ AccessToken can be generated as per  https://developer.webex.com/docs/widgets in
 
 This project outcome will allow you to embed webex widget inside angular's component:
 
-Webex widget loading:
-<img src="https://github.com/abuzzi-cisco/webex-widget/blob/main/angular-webex-widget-1of2.png" width="500"><br><br>
+Webex widget loading:<br>
+<img src="https://github.com/abuzzi-cisco/angular-webex-widget/blob/main/angular-webex-widget-1of2.png" width="500"><br><br>
 
 Space token error (you need to put valid token into webex-widget.component.ts)
-<img src="https://github.com/abuzzi-cisco/webex-widget/blob/main/angular-webex-widget-2of2.png" width="500"><br>
+<img src="https://github.com/abuzzi-cisco/angular-webex-widget/blob/main/angular-webex-widget-2of2.png" width="500"><br>
