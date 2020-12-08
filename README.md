@@ -30,5 +30,5 @@ This project outcome will allow you to embed webex widget inside angular's compo
 Webex widget loading:<br>
 <img src="https://github.com/abuzzi-cisco/angular-webex-widget/blob/main/angular-webex-widget-1of2.png" width="500"><br><br>
 
-Space token error (you need to put valid token into webex-widget.component.ts)
+Expected space token error due to invalid token present into webex-widget.component.ts:<br>
 <img src="https://github.com/abuzzi-cisco/angular-webex-widget/blob/main/angular-webex-widget-2of2.png" width="500"><br>
