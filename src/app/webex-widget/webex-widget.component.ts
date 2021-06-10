@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 declare var webex: any;
-
+declare var jwt: any;
 @Component({
   selector: 'app-webex-widget',
   templateUrl: './webex-widget.component.html',
@@ -18,13 +18,13 @@ export class WebexWidgetComponent implements OnInit {
       var widgetEl = document.getElementById('my-webex-widget');
 
       webex.widget(widgetEl).spaceWidget({
-        guestToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InNoYWtvb3IiLCJzdWIiOiJzaGFrb29yIiwibmFtZSI6InNoYWtvb3IgdGVzdGluZyBhcCIsIm5iZiI6MTYyMjkwMjQyNSwiZXhwIjoxNjIzMTYxNjI1LCJpYXQiOjE2MjI5MDI0MjUsImlzcyI6IlkybHpZMjl6Y0dGeWF6b3ZMM1Z5YmpwVVJVRk5PbVYxTFdObGJuUnlZV3d0TVY5ckwwOVNSMEZPU1ZwQlZFbFBUaTh4TVRrMk9XVm1NUzFtWTJaa0xUUTRNV0V0WW1ZeVppMDRPVE5pTlRkak1EYzJNak0iLCJhdWQiOiJsbHZ1ZGZ2a3d2ZXB3a2Ruc253bXV1bHl2dHJhd3BwZiJ9._LRfWjHgwRx8gfk2PgPSEiREHMcB61AhgCH9qCW1rPM',
-        destinationId: 'shakoor.hussain@deg.shj.ae',
-        destinationType: 'email',
-        spaceActivities: {"files":true,"meet":true,"message":true,"people":true},
-        initialActivity: 'message',
-        secondaryActivitiesFullWidth: false,
-        composerActions: {"files":true,"meet":true,"message":true,"people":true}
+        guestToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InNvbnkiLCJzdWIiOiJzb255IiwibmFtZSI6InNvbnkgZ3Vlc3QgdXNlciIsIm5iZiI6MTYyMzI3MTQwNCwiZXhwIjoxNjIzNTMwNjA0LCJpYXQiOjE2MjMyNzE0MDQsImlzcyI6IlkybHpZMjl6Y0dGeWF6b3ZMM1Z5YmpwVVJVRk5PblZ6TFhkbGMzUXRNbDl5TDA5U1IwRk9TVnBCVkVsUFRpOW1OMlZoT0dKaE15MDBNV1U1TFRRNFl6VXRZVEE0WlMwME1tTTJNMlZtTlRWbFlUQSIsImF1ZCI6InB6cW1kZnZrd3ZlcHdrZG5zbndtdXVseXZ0cnR2cW1wIn0.7gPykOAbHmFQNAF1vI1CbzECKpDjwCZcYk-NkizpKlk',
+        destinationId: 'https://meet95.webex.com/meet95/j.php?MTID=m7f7dd707a0d66eb6429218ad52fcf5ae',
+        destinationType: 'sip',
+        spaceActivities: { "files": true, "meet": true, "message": true, "people": true },
+        initialActivity: 'meet',
+        secondaryActivitiesFullWidth: true,
+        composerActions: { "files": true, "meet": true, "message": true, "people": true },
       });
 
 
